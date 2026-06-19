@@ -60,7 +60,6 @@ import {
   batalkanTiket,
   formatRupiah,
   ApiError,
-  API_URL,
 } from "./api";
 
 // ------------------------------------------------------------

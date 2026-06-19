@@ -1,0 +1,27 @@
+services:
+  # ----- CONTAINER SERVER -----
+  server:
+    build: ./server
+    container_name: tiket-server
+    ports:
+      - "3000:3000"
+    networks:
+      - jaringan-tiket
+
+  # ----- CONTAINER CLIENT (FRONTEND) -----
+  client:
+    build:
+      context: ./client
+      args:
+        VITE_API_URL: http://localhost:3000
+    container_name: tiket-client
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
+    networks:
+      - jaringan-tiket
+
+networks:
+  jaringan-tiket:
+    driver: bridge

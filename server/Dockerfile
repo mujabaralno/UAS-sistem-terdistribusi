@@ -1,7 +1,3 @@
-# ============================================================
-#  Dockerfile - SERVER (TypeScript + Express)
-#  Membangun image untuk container server REST API.
-# ============================================================
 
 FROM node:20-alpine
 WORKDIR /app

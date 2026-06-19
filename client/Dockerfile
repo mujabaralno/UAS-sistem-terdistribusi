@@ -1,15 +1,9 @@
-# ============================================================
-#  Dockerfile - CLIENT (React + Vite + TypeScript)
-#  Multi-stage: (1) build aset statis, (2) sajikan via Nginx.
-# ============================================================
 
 # ---------- TAHAP 1: BUILD ----------
 FROM node:20-alpine AS build
 WORKDIR /app
 
-# Alamat API server (bisa diganti saat build).
-# Frontend berjalan di BROWSER, jadi memanggil port server yang
-# dipetakan ke laptop (host), yaitu http://localhost:3000.
+
 ARG VITE_API_URL=http://localhost:3000
 ENV VITE_API_URL=$VITE_API_URL
 

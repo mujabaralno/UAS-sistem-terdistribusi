@@ -38,25 +38,26 @@ uas-sistem-terdistribusi/
 
 ## Daftar Layanan (Method Service)
 
-| No | Method | Endpoint     | Fungsi                              |
-|----|--------|--------------|-------------------------------------|
-| 1  | GET    | `/jadwal`    | Melihat daftar jadwal tiket         |
-| 2  | POST   | `/pesan`     | Memesan tiket                       |
-| 3  | GET    | `/tiket/:id` | Melihat detail tiket                |
-| 4  | POST   | `/batal/:id` | Membatalkan tiket                   |
+| No  | Method | Endpoint     | Fungsi                      |
+| --- | ------ | ------------ | --------------------------- |
+| 1   | GET    | `/jadwal`    | Melihat daftar jadwal tiket |
+| 2   | POST   | `/pesan`     | Memesan tiket               |
+| 3   | GET    | `/tiket/:id` | Melihat detail tiket        |
+| 4   | POST   | `/batal/:id` | Membatalkan tiket           |
 
 ## Teknologi
 
-| Komponen        | Teknologi                                            |
-|-----------------|------------------------------------------------------|
-| Server          | Node.js, Express, TypeScript, CORS                   |
-| Client          | React, Vite, TypeScript, Tailwind CSS                |
-| Komunikasi      | REST API (HTTP, JSON)                                |
-| Kontainerisasi  | Docker, Docker Compose, Nginx (penyaji frontend)     |
+| Komponen       | Teknologi                                        |
+| -------------- | ------------------------------------------------ |
+| Server         | Node.js, Express, TypeScript, CORS               |
+| Client         | React, Vite, TypeScript, Tailwind CSS            |
+| Komunikasi     | REST API (HTTP, JSON)                            |
+| Kontainerisasi | Docker, Docker Compose, Nginx (penyaji frontend) |
 
 ## Cara Menjalankan (Pengembangan / tanpa Docker)
 
 **Terminal 1 — Server**
+
 ```bash
 cd server
 npm install
@@ -64,6 +65,7 @@ npm run dev      # server jalan di http://localhost:3000
 ```
 
 **Terminal 2 — Client**
+
 ```bash
 cd client
 npm install
@@ -101,8 +103,8 @@ pada Wi-Fi yang sama, arahkan frontend ke `http://192.168.1.5:3000` lewat
 
 ## Anggota Kelompok
 
-| Nama | NPM | Tugas |
-|------|-----|-------|
-| ...  | ... | ...   |
-| ...  | ... | ...   |
-| ...  | ... | ...   |
+| Nama     | NPM         | Tugas                                    |
+| -------- | ----------- | ---------------------------------------- |
+| M. Hilmi | 24073122005 | Back-end (REST API server, Express + TS) |
+| Alno     | 24073122003 | Front-end (React + Vite)                 |
+| Faisal   | 24073122025 | Konfigurasi Docker (compose & container) |
